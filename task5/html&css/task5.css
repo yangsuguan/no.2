@@ -73,7 +73,7 @@ footer{
     margin-bottom: 15px;
 }
 .user-loc{
-    background: url(../images/loc.png) no-repeat;
+    background: url(../images/loc.png) no-repeat left center;
     background-size: 10px;
     font-size: 1rme;
     padding-left:13px ;
