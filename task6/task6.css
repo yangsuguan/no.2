@@ -1,0 +1,158 @@
+body{
+    max-width: 720px;
+    margin: 0 auto;
+}
+html{
+    font-size: 62.5%;
+}
+@media screen and (max-width: 480px){
+    html{
+    font-size: 30%;
+}
+}
+/*layout*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 720px;
+}
+.header{
+    width: 100%;
+    padding: 1% 0;
+    background: #5fc0cd;
+    text-align: center;
+}
+.list-head{
+    display: flex;
+    max-width: 100%;
+    padding: 2% 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+main{
+    margin: 20% 0 10% 0;
+}
+.list{
+    float: left;
+    width: 94%;
+    padding: 3% 4% 3% 2%;
+    border-bottom: 1px solid #e7e7e7;
+}
+.list-top{
+    width: 100%;
+    padding-left: 6%;
+    font-size: 2.1rem;
+    color: #999999;
+    background: url(../images/task6.png) no-repeat left;
+    background-size: 4%;
+}
+.list-item{
+    float: left;
+    width: 100%;
+    padding: 2% 0;
+    font-size: 2.2rem;
+    color: #333333;
+}
+.list-buttom {
+    float: left;
+    width: 100%;
+    padding-left: 6%;
+    background: url(../images/task6.2.png) no-repeat left center;
+    background-size: 3%;
+    font-size: 2.1rem;
+    color: #999999;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 720px;
+    border-top: 1px solid #e2eaec;
+    background: #f8fafb;
+}
+.footer-center{
+    width: 27%;
+    padding: 0 10%;
+    text-align: center;
+}
+.foot-left{
+    width: 13%;
+    text-align: center;
+    color: #5fc0cd;
+    font-size: 1.6rem;
+}
+.footer-right{
+    width: 13%;
+    text-align: center;
+    color: #9fa0a0;
+    font-size: 1.6rem;
+}
+/*module*/
+/*head-list-head*/
+.list-head select{
+    flex: 1;
+    padding-left: 10%;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #999;
+    border: none;
+    border-right: 1px solid #e7e7e7;
+    outline: none;
+}
+select option{
+}
+.loc{
+    float: right;
+    width: 6%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.button{
+    display: flex;
+    width: 40%;
+    margin: 0 30%;
+}
+button{
+    flex: 1;
+    padding: 5% 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 2.8rem;
+}
+.button-left{
+    background: #55a8b3;
+    color: #fff;
+}
+.button-right{
+    background: #fff;
+    color: #5fc0cd;
+}
+/*main-list-item*/
+.list-item-left{
+    float: left;
+    padding-left: 12%;
+}
+.list-item-right{
+    float: right;
+    color: #eb6e59;
+    padding-right: 2.5%;
+
+}
+.fanhui{
+    float: right;
+    width: 2.5%;
+}
+.fanhui img{
+    max-width: 100%;
+}
+/*footer*/
+footer img{
+    max-width: 50%;
+}
+footer p{
+    margin: 8% 0;
+}
+
