@@ -96,6 +96,10 @@ footer{
 }
 /*module*/
 /*head-list-head*/
+label{
+    flex: 1;
+    display: flex;
+}
 .list-head select{
     flex: 1;
     padding-left: 10%;
