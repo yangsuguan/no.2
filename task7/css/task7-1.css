@@ -1,20 +1,20 @@
 html{
-    font-size: 12px;
+    font-size: 10px;
 }
 @media screen and (min-width: 480px){
     html{
         font-size: 15px;
     }
 }
-@media screen and (min-width: 640px){
-    html{
-        font-size: 17px;
+    @media screen and (min-width: 640px){
+        html{
+            font-size: 17px;
+        }
     }
-}
-@media screen and (min-width: 720px){
-    html{
-        font-size: 20px;
-    }
+    @media screen and (min-width: 720px){
+        html{
+            font-size: 20px;
+        }
 }
 body{
     background: #f0f0f0;
@@ -23,6 +23,7 @@ p{
     margin: 0;
 }
 /*layout*/
+/*头部*/
 header{
     position: fixed;
     top: 0;
@@ -32,6 +33,7 @@ header{
     align-items: center;
     padding: 0.8rem 1rem;
     background: #29bde0;
+    z-index: 1;
 }
 .button{
     padding: 0;
@@ -41,10 +43,10 @@ header{
     background: #29bde0;
     outline: none;
 }
+/*内容*/
 main{
     position: relative;
     top: 3rem;
-    overflow: scroll;
 }
 .title-wrap{
     padding: 8% 0;
@@ -69,8 +71,15 @@ main{
     margin-right: 0.5rem;
 }
 .content{
+    position: relative;
     border: 1px solid #c9c9c9;
     background: #fff;
+}
+.content .triangle{
+    position: absolute;
+    top: 47%;
+    right: 0.5rem;
+    width: 1.2rem;
 }
 .content-head{
     border-bottom: 1px solid #fbb435;
