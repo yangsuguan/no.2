@@ -21,13 +21,12 @@ ul,
 li{
     list-style-type: none;
 }
-h5,
 p,
 ul{
     margin: 0;
     padding: 0;
 }
-h5{
+h4{
     padding: 30px 0;
     font-size: .8rem;
 }
@@ -54,19 +53,37 @@ body{
 .navigation{
     width: 100%;
     background: #29b078;
-    height: 100px;
     font-size: .8rem;
+    margin-bottom: 0;
+    border: 0;
 }
-.nav-area a{
-    display: inline-block;
-    line-height: 95px;
-    padding:0 20px;
+
+@media (min-width: 768px) {
+    .collapse ul{
+        float: right;
+    }
+    .collapse ul li a{
+        padding: 38px 15px;
+    }
+    .collapse ul li:nth-child(2){
+        border-bottom: 4px solid #fff;
+    }
+    .collapse ul li:hover{
+        border-bottom: 4px solid #fff;
+    }
+}
+.collapse .navbar-nav > li > a{
+    color: #fafafa;
+}
+.collapse .navbar-nav > li > a:hover,
+.collapse .navbar-nav > li > a:focus {
+    background: #26a973;
     color: #fff;
-    border-bottom: 5px solid transparent;
 }
-.nav-area a:hover{
-    border-bottom: 5px solid #fff;
-    text-decoration: none;
+.navigation-btn{
+    margin-top: 35px;
+    border: 0;
+    margin-right: 0;
 }
 .navigation-img{
     display: inline-block;
@@ -85,8 +102,9 @@ body{
     padding-top: 30px;
 }
 .sideBar li{
+    width: 85px;
+    margin: 0 auto;
     padding-bottom: 30px;
-    padding-left: 30%;
 }
 .sideBar li span{
     display: inline-block;

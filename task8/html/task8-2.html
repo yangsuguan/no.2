@@ -6,46 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/task8-2.css">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!--联系方式-->
 <section class="header">
     <div class="container">
         <div class="row">
-            <span class="pull-left">客服热线：010-594-78643</span>
-            <span class="pull-right header-right">
+            <div class="col-xs-12">
+                <span class="pull-left">客服热线：010-594-78643</span>
+                <span class="pull-right header-right">
                 <img src="../images/nav-top1.png">
                 <img src="../images/nav-top2.png">
                 <img src="../images/nav-top3.png">
             </span>
-        </div>
-    </div>
-</section>
-<section class="navigation">
-    <div class="container">
-        <div class="row">
-            <div class="pull-right nav-area">
-                <a href="task8-1.html">首页</a>
-                <a href="task8-2.html">职业</a>
-                <a href="task8-3.html">推荐</a>
-                <a>关于</a>
-            </div>
-            <div class="navigation-img">
-            <img src="../images/jnshu.png">
             </div>
         </div>
     </div>
 </section>
-<section class="content">
-    <div class="content-top">
-        <img src="../images/⁭content-top.png" class="img-responsive">
-    </div>
+<!--联系方式结束-->
+<!--导航栏开始-->
+<nav class="navbar navbar-default navigation" role="navigation">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-            <h5>首页><a>合作企业</a></h5>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navigation-btn" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navigation-img">
+                        <img src="../images/jnshu.png">
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav text-center">
+                        <li><a href="task8-1.html">首页</a></li>
+                        <li><a href="task8-2.html">职业</a></li>
+                        <li>
+                            <a href="task8-3.html">推荐</a>
+                        </li>
+                        <li><a>关于</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
+</nav>
+<!--导航栏结束-->
+<!--内容主体开始-->
+<section class="content">
+    <!--头部图片-->
+    <div class="content-top">
+        <img src="../images/⁭content-top.png" class="img-responsive">
+    </div>
+    <!--头部图片结束-->
+    <div class="container">
+        <!--标题-->
         <div class="row">
+            <div class="col-xs-12">
+            <h4>首页><a>合作企业</a></h4>
+            </div>
+        </div>
+        <!--标题结束-->
+        <div class="row">
+            <!--侧栏开始-->
             <div class="col-md-3">
                 <div class="sideBar">
                     <p class="text-center">合作企业</p>
@@ -90,6 +119,8 @@
                     </ul>
                 </div>
             </div>
+            <!--侧栏结束-->
+            <!--主要内容开始-->
             <div class="col-md-9">
                 <div class="content-main">
                     <div class="content-main-top">
@@ -108,10 +139,12 @@
 
                 </div>
             </div>
+            <!--主要内容结束-->
         </div>
     </div>
-
+    <!--内容主体结束-->
 </section>
+<!--页面底部开始-->
 <section class="footer">
     <div class="container">
         <div class="row footer-wrap">
@@ -140,6 +173,8 @@
         Copyright@2015技能树www.jnshu.com&nbsp;ALL&nbsp;right&nbsp;reseved丨京ICP备13005880号
     </div>
 </section>
+<!--页面底部结束-->
+<!--页面结束-->
 
 </body>
 </html>
