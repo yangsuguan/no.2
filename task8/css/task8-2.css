@@ -75,19 +75,38 @@ body{
 .collapse .navbar-nav > li > a{
     color: #fafafa;
 }
+.collapse .navbar-nav > li > a{
+    color: #fafafa;
+    border-bottom: 1px solid transparent;
+}
+.collapse .navbar-nav >li>.active{
+    border-bottom: 1px solid #fff;
+}
 .collapse .navbar-nav > li > a:hover,
 .collapse .navbar-nav > li > a:focus {
     background: #26a973;
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 .navigation-btn{
-    margin-top: 35px;
+    margin:9px 0;
     border: 0;
-    margin-right: 0;
 }
 .navigation-img{
     display: inline-block;
-    line-height: 100px;
+    line-height: 50px;
+    width: 50px;
+}
+
+@media (min-width: 768px) {
+    .navigation-img{
+        width: 107px;
+        line-height: 100px;
+    }
+}
+.navigation-img img{
+    display: inline-block;
+    max-width: 100%;
 }
 /*content*/
 .sideBar{
