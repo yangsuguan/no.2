@@ -1,0 +1,143 @@
+/*reset*/
+html {
+  font-size: 10px; }
+  @media (min-width: 480px) {
+    html {
+      font-size: 15px; } }
+  @media (min-width: 640px) {
+    html {
+      font-size: 18px; } }
+  @media (min-width: 720px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  margin: 0 auto;
+  max-width: 720px;
+  min-width: 320px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul,
+li {
+  list-style: none; }
+
+/*layout*/
+/*header*/
+header {
+  position: fixed;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  top: 0;
+  padding: 0 1.6rem;
+  height: 3.9rem;
+  line-height: 3.9rem;
+  color: #fff;
+  background: #5fc0cd; }
+  header > a {
+    float: left; }
+    header > a .return {
+      width: 1.2rem;
+      height: auto;
+      vertical-align: middle; }
+  header > h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding: 0 3rem; }
+
+/*main*/
+main {
+  margin-top: 3.9rem;
+  margin-bottom: 8.5rem; }
+  main > .main-head {
+    display: flex;
+    align-items: center;
+    height: 16rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-image: url("../images/beijing.png");
+    background-size: 100%; }
+    main > .main-head > .center-img {
+      width: 8.5rem;
+      height: auto;
+      margin-left: 4%;
+      margin-right: 5%; }
+    main > .main-head > .name > p {
+      margin-bottom: .5rem; }
+      main > .main-head > .name > p > span {
+        font-size: 1.4rem; }
+    main > .main-head > .name > span {
+      font-size: 1.2rem;
+      line-height: 1.7rem; }
+      main > .main-head > .name > span > img {
+        width: 1rem;
+        height: auto;
+        vertical-align: middle; }
+  main > .list > .list-head {
+    padding: 1.6rem;
+    border-bottom: 1px solid #e1e5e7; }
+    main > .list > .list-head > p {
+      font-size: 1.6rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid #5fc0cd; }
+  main > .list > ul {
+    padding-left: 1.5rem; }
+    main > .list > ul > li {
+      display: flex;
+      align-items: center;
+      padding: 1.4rem 1.2rem;
+      border-bottom: 1px solid #e1e5e7;
+      font-size: 1.6rem; }
+      main > .list > ul > li img {
+        width: 1.2rem;
+        height: auto; }
+      main > .list > ul > li > .list-title {
+        flex: 0 0 auto;
+        padding-right: 1.1rem;
+        border-right: 1px solid #e1e5e7;
+        color: #999999; }
+      main > .list > ul > li > .list-content {
+        padding-left: 1.1rem;
+        color: #333; }
+        main > .list > ul > li > .list-content:last-child {
+          font-size: 1.4rem; }
+      main > .list > ul > li > .list-important {
+        padding-left: 1.1rem;
+        color: #e26163; }
+
+footer {
+  position: fixed;
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  bottom: 0;
+  height: 8.5rem;
+  display: flex;
+  padding: 2rem 1.8rem;
+  background: #fff;
+  font-size: 1.7rem; }
+  footer > .button-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5fc0cd;
+    border-radius: .5rem;
+    color: #5fc0cd; }
+  footer > .button-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #5fc0cd;
+    border-radius: .5rem;
+    color: #fff;
+    margin-left: 1rem;
+    background: #5fc0cd; }
+
+/*# sourceMappingURL=task5.css.map */
