@@ -83,7 +83,7 @@ header {
     padding: 1rem 0;
     border-bottom: 1px solid #e7eaec;
     background: #fff; }
-    header > .dropdown > label > select {
+    header > .dropdown > select {
       flex: 1;
       padding-left: 8%;
       -moz-appearance: none;
@@ -98,7 +98,7 @@ header {
       background-repeat: no-repeat;
       background-position: 94% center;
       background-size: .8rem auto; }
-      header > .dropdown > label > select:last-child {
+      header > .dropdown > select:last-child {
         border: none; }
 
 /*main*/
