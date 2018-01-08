@@ -4,6 +4,7 @@ body {
 
 /*header*/
 header > .category {
+  float: left !important;
   width: .4rem;
   height: 100%;
   background: url("../images/category.png") no-repeat center;
@@ -15,7 +16,7 @@ main {
   text-align: center; }
   main > .last-game {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
     height: 1.18rem;
     margin: .24rem 0;
@@ -72,4 +73,4 @@ main {
         width: .28rem;
         right: 2%; }
 
-/*# sourceMappingURL=task13-1.css.map */
+/*# sourceMappingURL=game-version.css.map */

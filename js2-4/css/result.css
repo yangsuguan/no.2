@@ -1,9 +1,13 @@
+body {
+  background: #fff; }
+
 /*header*/
 header {
   font-size: 0;
-  border-bottom: 1px solid #fff; }
-  header > a {
-    width: .53rem; }
+  border-bottom: 1px solid #74d4eb; }
+  header > .iconfont {
+    width: .53rem;
+    font-size: .5rem; }
   header > h4 {
     font-size: .34rem;
     color: #fff; }
@@ -18,9 +22,16 @@ main {
     background: #29bde0; }
     main > .game-result > .victory-img-area {
       width: 70%;
-      margin: 0 auto;
+      height: 2rem;
+      margin: .1rem auto;
       padding-top: .1rem;
-      text-align: center; }
+      text-align: center;
+      background: url("../images/victory.png") no-repeat center;
+      background-size: contain; }
+      main > .game-result > .victory-img-area > h3 {
+        color: #fff;
+        font-size: .4rem;
+        margin-top: 1.2rem; }
     main > .game-result > .resule-title {
       margin: .2rem 0;
       font-size: .33rem;
@@ -49,6 +60,11 @@ main {
         color: #c7c7c7; }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  max-width: 480px;
   display: flex;
   align-items: center;
   height: 1.3rem;
@@ -72,4 +88,4 @@ footer {
     background: #fbb435;
     margin-left: .5rem; }
 
-/*# sourceMappingURL=task13-3.css.map */
+/*# sourceMappingURL=result.css.map */

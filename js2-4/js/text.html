@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="state-machine.js"></script>
+    <style>
+        span{
+            display: inline-block;
+            background: #31b0d5;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <span class="yellow" ></span>
+
+<div>
+    <span class="yellow"></span>
+</div>
+<button>按钮</button>
+    <script>
+        $(document).ready(function(){
+            $("div").on("click mouseup",function(){
+                $(this).after("<p style='color:green;'>释放鼠标按钮。</p>");
+            });
+        });
+    </script>
+</body>
+</html>
