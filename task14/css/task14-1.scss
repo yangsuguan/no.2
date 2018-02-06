@@ -100,7 +100,7 @@ $fontColor:#999999;
       &:hover{
         background: #fafafa;
       }
-      &:focus+.drop-down{
+      &:focus+.drop-down {
         display: block;
       }
       @media (min-width: 768px) {
@@ -110,9 +110,11 @@ $fontColor:#999999;
 
     >.contianer > .drop-down {
       display: none;
-      height: 200px;
       background: $Colorgreen;
       border-top: 1px solid #dedede;
+      &:hover{
+        display: block;
+      }
 
       > li {
         text-align: center;

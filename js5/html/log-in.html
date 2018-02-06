@@ -1,4 +1,4 @@
-<div class="log-in"  ng-controller="myCtrl" >
+<div class="log-in"  ng-controller="myCtrl as login" >
 <form class="log-in-wrap" name="myForm" novalidate>
     <h4>后台登录</h4>
     <div class="account-wrap">
@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="submit-wrap" >
-        <input type="submit" class="submit" ng-disabled="myForm.account.$invalid||myForm.password.$invalid" ng-click="submit()">
+        <button type="submit" class="submit" ng-disabled="myForm.account.$invalid||myForm.password.$invalid" ng-click="submit()">登录</button>
     </div>
 </form>
 </div>

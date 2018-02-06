@@ -22,9 +22,9 @@
                     <div class=" form-group">
                         <label class="control-label col-md-4">类&emsp;型</label>
                         <div class="col-md-8">
-                            <select class="form-control" ng-model="selectType">
+                            <select class="form-control" ng-model="arti.selectType">
                                 <option value="">全部</option>
-                                <option ng-repeat="(x,y) in types" value="{{x}}" >{{y}}</option>
+                                <option ng-repeat="(x,y) in arti.types" value="{{x}}" >{{y}}</option>
                             </select>
                         </div>
                     </div>
@@ -35,9 +35,9 @@
                     <div class=" form-group">
                         <label class="control-label col-md-4">状&emsp;态</label>
                         <div class="col-md-8">
-                            <select class="form-control" ng-model="selectStatus">
+                            <select class="form-control" ng-model="arti.selectStatus">
                                 <option value="">全部</option>
-                                <option ng-repeat="(x,y) in status" value="{{x}}">{{y}}</option>
+                                <option ng-repeat="(x,y) in arti.status" value="{{x}}">{{y}}</option>
                             </select>
                         </div>
                     </div>
@@ -45,8 +45,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4 pull-right text-right">
-                    <button class="btn btn-danger" ng-click="cleanSeach()">清空</button>
-                    <button class="btn btn-success " ng-click="seach()">搜索</button>
+                    <button class="btn btn-danger" ng-click="arti.cleanSeach()">清空</button>
+                    <button class="btn btn-success " ng-click="arti.seach()">搜索</button>
                 </div>
             </div>
         </form>
@@ -57,7 +57,7 @@
             <h4 class="panel-title">Artical列表
                 <button class="btn btn-success btn-xs pull-right"
                         ui-sref="carrots.Artical-detail({id:'add'})"
-                        ng-click="addList()">
+                        ng-click="arti.addList()">
                     +新增
                 </button>
             </h4>
@@ -77,7 +77,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="item in articleList">
+                <tr ng-repeat="item in arti.articleList">
                     <td>{{$index+1}}</td>
                     <td>{{item.title}}</td>
                     <td>{{item.type | showType}}</td>
@@ -92,9 +92,9 @@
                     <td>{{item.author}}</td>
                     <td>{{item.status| showStatus}}</td>
                     <td>
-                        <a ng-click="changeStatu(item)">{{item.status|changeStatus}}</a>
-                        <a  ng-click="edit(item.id)" >编辑</a>
-                        <a ng-click="deleteItem(item)">删除</a>
+                        <a ng-click="arti.changeStatu(item)">{{item.status|changeStatus}}</a>
+                        <a  ng-click="arti.edit(item.id)" >编辑</a>
+                        <a ng-click="arti.deleteItem(item)">删除</a>
                     </td>
                 </tr>
                 </tbody>
@@ -104,13 +104,13 @@
     <div class="paging">
         <div class="pull-right jumpPage">
             去第
-            <input type="text" class="form-control" ng-model="page">
+            <input type="text" class="form-control" ng-model="arti.page">
             页
-            <button class="btn btn-default" ng-click="changeDefault()">确定</button>
+            <button class="btn btn-default" ng-click="arti.changeDefault()">确定</button>
         </div>
         <ul uib-pagination
             class="iconfont pull-right pagination-sm"
-            total-items="bigTotalItems"
+            total-items="arti.bigTotalItems"
             max-size="maxSize"
             boundary-links="true"
             force-ellipses="true"
@@ -118,14 +118,14 @@
             last-text=末页
             previous-text=&#xe697;
             next-text=&#xe6a7;
-            items-per-page="items"
+            items-per-page="arti.items"
             rotate="false"
-            ng-model="currentPage"
-            ng-click="pageChange()">
+            ng-model="arti.currentPage"
+            ng-click="arti.pageChange()">
         </ul>
         <div class="pull-right Pageitems">
             每页显示
-            <input type="text" class="form-control" ng-model="size">
+            <input type="text" class="form-control" ng-model="arti.size">
             条
         </div>
     </div>

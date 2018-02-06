@@ -32,11 +32,13 @@ h4{
 }
 a{
     color: #29b078;
+    cursor: pointer;
 }
 body{
     background: #fafafa;
 }
 /*header*/
+
 .header{
     position: relative;
     line-height: 40px;
@@ -46,8 +48,29 @@ body{
 .header-right{
     line-height: 40px;
 }
+.header-right,
+.header-left {
+    display: none;
+}
+@media (min-width: 768px) {
+    .header-right,
+    .header-left {
+        display: block;
+    }
+}
 .header-right img{
     margin-left: 5px;
+}
+.header .sign-in{
+    color: #333;
+}
+@media (min-width: 768px) {
+    .sign-in{
+        display: none;
+    }
+}
+.sign-in>span:first-of-type{
+    border-right: 2px solid #29b078;
 }
 /*navigation*/
 .navigation{
@@ -84,7 +107,6 @@ body{
 }
 .collapse .navbar-nav > li > a:hover,
 .collapse .navbar-nav > li > a:focus {
-    background: #26a973;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
@@ -112,7 +134,9 @@ body{
 .sideBar{
     background: #fff;
     border: 1px solid #ededed;
+    margin-bottom: 20px;
 }
+
 .sideBar p{
     padding: 20px 0;
     border-bottom: 1px solid #ededed;

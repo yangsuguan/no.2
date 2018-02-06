@@ -1,15 +1,15 @@
 /*reset*/
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
   @media (min-width: 480px) {
     html {
-      font-size: 15px; } }
+      font-size: 80%; } }
   @media (min-width: 640px) {
     html {
-      font-size: 17px; } }
+      font-size: 100%; } }
   @media (min-width: 720px) {
     html {
-      font-size: 20px; } }
+      font-size: 125%; } }
 
 * {
   box-sizing: border-box;

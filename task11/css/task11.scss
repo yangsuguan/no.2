@@ -20,7 +20,7 @@ body{
 }
 a{
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: $fontsize;
   text-decoration: none;
   color: #fff;
   &:hover{
@@ -28,14 +28,19 @@ a{
   }
 }
 $bgcolor:#5fc0cd;
+$fontsize:1.6rem;
 @mixin input($url:url("../images/iphone.png")){
   margin-top: .8rem;
   border: 0;
   width: 100%;
   padding-left: 7rem;
   height: 5rem;
+<<<<<<< Updated upstream
   font-size: 1.6rem;
   outline: none;
+=======
+  font-size: $fontsize;
+>>>>>>> Stashed changes
   background: {
     position: 2rem center;
     size:3.9rem auto;
@@ -92,7 +97,7 @@ footer{
       line-height: 5rem;
       text-align: center;
       color: #fff;
-      font-size: 1.6rem;
+      font-size: $fontsize;
       &:active{
         box-shadow: inset 3px 3px rgba(0,0,0,.2);
       }

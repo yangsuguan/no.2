@@ -47,8 +47,29 @@ a{
 .header-right{
     line-height: 40px;
 }
+.header-right,
+.header-left {
+    display: none;
+}
+@media (min-width: 768px) {
+    .header-right,
+    .header-left {
+        display: block;
+    }
+}
 .header-right img{
     margin-left: 5px;
+}
+.header .sign-in{
+    color: #333;
+}
+@media (min-width: 768px) {
+    .sign-in{
+        display: none;
+    }
+}
+.sign-in>span:first-of-type{
+    border-right: 2px solid #29b078;
 }
 /*navigation*/
 /*.navigition包括.nav-area和.navigation-img元素*/
@@ -83,7 +104,6 @@ a{
 }
 .collapse .navbar-nav > li > a:hover,
 .collapse .navbar-nav > li > a:focus {
-    background: #26a973;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
@@ -202,6 +222,14 @@ a{
     padding-bottom: 150px;
 }
 /*包含.box-top元素*/
+.third-box-area{
+    padding: 10px;
+}
+@media (max-width: 720px) {
+    .third-box-area{
+        padding: 15px 30px;
+    }
+}
 .third-box{
     padding:20px;
     background: #fff;
@@ -242,26 +270,46 @@ a{
 }
 /*包含.bottom-box元素*/
 .bottom-box-wrap{
-    border: 1px solid #f6f6f6;
     margin-bottom: 90px;
 }
-.bottom-box{
+.bottom-box {
     float: left;
     height: 180px;
     width: 100%;
+    padding: 15px;
     line-height: 180px;
     text-align: center;
-    background: #fff;
-    overflow: hidden;
+}
+@media (min-width: 992px) {
+    .bottom-box{
+        width: 20%;
+        padding: 1px;
+    }
+}
+.bottom-box a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.alibaba{
+    background: url("../images/alibaba.png") no-repeat center #fff;
+}
+.jinshanyun{
+    background: url("../images/jinshanyun.png") no-repeat center #fff;
+}
+.huanxin{
+    background: url("../images/huanxin.png") no-repeat center #fff;
+}
+.ronglian{
+    background: url("../images/yuntongxun.png") no-repeat center #fff;
+}
+.qiniuyun{
+    background: url("../images/jinniu.png") no-repeat center #fff;
 }
 
-.bottom-box:hover{
-    box-shadow: 0px 0px 2px 3px #f0efef;
+.bottom-box-wrap a:hover{
+    box-shadow: 0px 0px 2px 2px #f0efef;
 }
-@media (min-width: 765px){
-    .bottom-box{
-        width: 50%;
-    }
 }
 @media (min-width: 992px){
     .bottom-box{
@@ -281,8 +329,13 @@ a{
 .content-footer li{
     float: left;
     line-height: 30px;
-    width: 50%;
+    width: 33.3%;
     padding: 0 10px;
+}
+@media (min-width: 370px) {
+    .content-footer li{
+        width: 25%;
+    }
 }
 @media (min-width: 765px) {
     .content-footer li{

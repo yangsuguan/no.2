@@ -93,17 +93,25 @@ $fontSizeMin:12px;
 
     >.contianer > .drop-down {
       display: none;
-      height: 200px;
       background: $Colorgreen;
       border-top: 1px solid #dedede;
-
+      &:hover{
+        display: block;
+      }
       > li {
         text-align: center;
         line-height: 48px;
+        border-bottom: 1px solid transparent;
         &:hover{
           border-bottom: 1px solid #fff;
         }
 
+        >a{
+          width: 100%;
+        }
+        }
+      >.active{
+        border-bottom: 1px solid #fff;
       }
     }
   }

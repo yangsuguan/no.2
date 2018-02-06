@@ -67,14 +67,20 @@
           display: none; } }
     .header > .nav > .contianer > .drop-down {
       display: none;
-      height: 200px;
       background: #29b078;
       border-top: 1px solid #dedede; }
+      .header > .nav > .contianer > .drop-down:hover {
+        display: block; }
       .header > .nav > .contianer > .drop-down > li {
         text-align: center;
-        line-height: 48px; }
+        line-height: 48px;
+        border-bottom: 1px solid transparent; }
         .header > .nav > .contianer > .drop-down > li:hover {
           border-bottom: 1px solid #fff; }
+        .header > .nav > .contianer > .drop-down > li > a {
+          width: 100%; }
+      .header > .nav > .contianer > .drop-down > .active {
+        border-bottom: 1px solid #fff; }
 
 .footer > .bottom {
   background: #29b078; }

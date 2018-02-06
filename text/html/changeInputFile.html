@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .btn{
+        position: relative;
+        display: inline-block;
+        background: #0a4f5f;
+        overflow: hidden;
+
+    }
+    .btn >input[type=file]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+</style>
+<body>
+<a class="btn">
+    选择文件
+<input type="file" accept="image/*" id="photo">
+</a>
+
+</body>
+</html>

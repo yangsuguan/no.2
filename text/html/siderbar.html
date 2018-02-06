@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <meta name='viewport' , content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.6.1/angular.js"></script>
+</head>
+<body>
+<div ng-controller="myControl">
+    <table class="table">
+        <tr ng-repeat="info in infoList">
+            <td>
+                <a ng-click="doMenu(info,true)">
+                    <span>{{info.item}}</span>
+                </a>
+                <ul ng-if="info.sublist.length" ng-show="info.showSubAble">
+                    <li ng-repeat="subinfo in info.sublist">
+                        <span>{{subinfo.name}}</span>
+                        <span>{{subinfo.name2}}</span>
+                        <span>{{subinfo.name3}}</span>
+                        <span>{{subinfo.name4}}</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("myControl", function ($scope) {
+        $scope.infoList = [
+            {
+                id: "1",
+                sublist: [{name: '小花1'}, {name2: "小花2"}, {name3: "小花2"}, {name4: "小花2"}],
+                item: "item1",
+                showSubAble: false
+            },
+            {id: "2", sublist: [{name: '小花2'}, {name2: "小花2"}], item: "item2", showSubAble: false},
+            {id: "3", sublist: [{name: '小花3'}, {name2: "小花2"}], item: "item3", showSubAble: false}
+        ];
+        $scope.doMenu = function (menuInfo, type) {
+                menuInfo.showSubAble = !(menuInfo.showSubAble);
+                this.infoList.forEach(function (item) {
+                    if (item.id != menuInfo.id) {
+                        item.showSubAble = false;
+                    } else {
+                        item.showSubAble = true;
+                    }
+                });
+        };
+    });
+</script>
+</body>
+</html>

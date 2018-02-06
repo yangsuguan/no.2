@@ -18,7 +18,7 @@ header{
     width: 100%;
     max-width: 720px;
 }
-.header{
+.head{
     width: 100%;
     padding: 1% 0;
     background: #5fc0cd;
@@ -123,18 +123,22 @@ select option{
     width: 40%;
     margin: 0 30%;
 }
-button{
+
+.button-left{
     flex: 1;
     padding: 5% 0;
     border-radius: 5px;
     border: none;
     font-size: 2.8rem;
-}
-.button-left{
     background: #55a8b3;
     color: #fff;
 }
 .button-right{
+    flex: 1;
+    padding: 5% 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 2.8rem;
     background: #fff;
     color: #5fc0cd;
 }

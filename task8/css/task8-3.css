@@ -46,6 +46,7 @@ img{
     margin-bottom: 0;
 }
 /*header*/
+
 .header{
     position: relative;
     line-height: 40px;
@@ -55,8 +56,29 @@ img{
 .header-right{
     line-height: 40px;
 }
+.header-right,
+.header-left {
+    display: none;
+}
+@media (min-width: 768px) {
+    .header-right,
+    .header-left {
+        display: block;
+    }
+}
 .header-right img{
     margin-left: 5px;
+}
+.header .sign-in{
+    color: #333;
+}
+@media (min-width: 768px) {
+    .sign-in{
+        display: none;
+    }
+}
+.sign-in>span:first-of-type{
+    border-right: 2px solid #29b078;
 }
 /*navigation*/
 .navigation{
@@ -91,7 +113,6 @@ img{
 }
 .collapse .navbar-nav > li > a:hover,
 .collapse .navbar-nav > li > a:focus {
-    background: #26a973;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
@@ -195,21 +216,23 @@ img{
     vertical-align: middle;
 }
 .form-area:hover .font-area{
+   opacity: 0.8;
+    transition: 1s;
+}
+.font-area{
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-.font-area{
-    position: absolute;
-    top: 0;
-    display: none;
     width: 100%;
     padding: 60px 50px;
-    background: rgba(0,0,0,0.8);
     color: #fff;
     font-size: .8rem;
+    background: #000;
+    opacity: 0;
 }
 .font-area h5{
     padding: 20px 0;

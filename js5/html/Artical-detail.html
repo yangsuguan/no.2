@@ -18,7 +18,7 @@
                         </div>
                         <span ng-show="ArticleList.title.$invalid"
                               ng-class="{red:true,inputLineHeight:true}">
-                            必填
+                            *
                         </span>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         </div>
                         <span ng-show="ArticleList.type.$invalid"
                               ng-class="{red:true,inputLineHeight:true}">
-                           必填
+                           *
                         </span>
                         <div class="col-md-2" ng-show="selectType==3">
                             <select class="form-control" ng-model="selectIndustry" name="Industry"
@@ -50,7 +50,7 @@
                         </div>
                         <span ng-show="ArticleList.Industry.$invalid&&selectType==3"
                               ng-class="{red:true,inputLineHeight:true}">
-                           必填
+                           *
                         </span>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                         </div>
                         <span ng-show="ArticleList.JumpLink.$invalid"
                               ng-class="{red:true,inputLineHeight:true}">
-                            必填
+                            *
                         </span>
                     </div>
                 </div>

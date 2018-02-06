@@ -11,7 +11,7 @@ $return.on('click',function () {
     window.location.href='game-version.html';
 });
 //滑动进度条时，根据进度条位置修改文本框数值
-$('.slide input:in-range').on('mouseup touchmove',function () {
+$('.slide input:in-range').on('input touchmove',function () {
     inputData.value = slidingData.value;
     num=null;
 });

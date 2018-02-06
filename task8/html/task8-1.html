@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="../css/task8-1.css" rel="stylesheet">
-    <script src="../bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
-    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="header">
+<div class="header">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <span class="pull-left">客服热线：010-594-78643</span>
+                <span class="pull-left header-left">客服热线：010-594-78643</span>
                 <span class="pull-right header-right">
                 <img src="../images/nav-top1.png">
                 <img src="../images/nav-top2.png">
                 <img src="../images/nav-top3.png">
             </span>
+                <span class="pull-right sign-in">
+                    <span>登录&nbsp;</span>
+                    <span>注册</span>
+                </span>
             </div>
         </div>
     </div>
-</section>
+</div>
 <nav class="navbar navbar-default navigation" role="navigation">
     <div class="container">
         <div class="row">
@@ -52,7 +56,7 @@
         </div>
     </div>
 </nav>
-<section class="content">
+<div class="content">
     <!--轮播开始-->
     <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
@@ -204,28 +208,28 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="row third-box-wrap">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
                             <div class="third-box">
                                 <img src="../images/Avatar.png" class="center-block img-circle">
                                 <h4 class="text-center">技术顾问</h4>
                                 <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
                             <div class="third-box">
                                 <img src="../images/Avatar1.png" class="center-block img-circle">
                                 <h4 class="text-center">技术顾问</h4>
                                 <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
                             <div class="third-box">
                                 <img src="../images/Avatar2.png" class="center-block img-circle">
                                 <h4 class="text-center">技术顾问</h4>
                                 <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
                             <div class="third-box">
                                 <img src="../images/pic.png" class="center-block img-circle">
                                 <h4 class="text-center">技术顾问</h4>
@@ -234,101 +238,98 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="row third-box-wrap">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                <div class="item">  <div class="row third-box-wrap">
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar1.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar1.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar2.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar2.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/pic.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/pic.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="row third-box-wrap">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                </div>
+                <div class="item">  <div class="row third-box-wrap">
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar1.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar1.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar2.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar2.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/pic.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/pic.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="row third-box-wrap">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar1.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/Avatar2.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="third-box">
-                                <img src="../images/pic.png" class="center-block img-circle">
-                                <h4 class="text-center">技术顾问</h4>
-                                <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
-                            </div>
+                </div>
+                <div class="item">  <div class="row third-box-wrap">
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar1.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/Avatar2.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 third-box-area">
+                        <div class="third-box">
+                            <img src="../images/pic.png" class="center-block img-circle">
+                            <h4 class="text-center">技术顾问</h4>
+                            <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级经理，负责技术研发团队管理与建设</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             <!-- 轮播（Carousel）导航 -->
@@ -339,21 +340,26 @@
             <h4>战略合作企业</h4>
         </div>
         <div class="row  bottom-box-wrap">
-            <a class="bottom-box">
-                <img src="../images/alibaba.png">
+            <div class="bottom-box">
+            <a class="alibaba">
             </a>
-            <a class="bottom-box">
-                <img src="../images/jinshanyun.png">
-            </a>
-            <a class="bottom-box">
-                <img src="../images/huanxin.png">
-            </a>
-            <a class="bottom-box">
-                <img src="../images/yuntongxun.png">
-            </a>
-            <a class="bottom-box">
-                <img src="../images/jinniu.png">
-            </a>
+            </div>
+            <div class="bottom-box">
+                <a class="jinshanyun">
+                </a>
+            </div>
+            <div class="bottom-box">
+                <a class="huanxin">
+                </a>
+            </div>
+            <div class="bottom-box">
+                <a class="ronglian">
+                </a>
+            </div>
+            <div class="bottom-box">
+                <a class="qiniuyun">
+                </a>
+            </div>
         </div>
         <!--合作企业结束-->
         </div>
@@ -429,9 +435,9 @@
         </div>
         </div>
     <!--友情链接结束-->
-</section>
+</div>
 <!--页面底部介绍开始-->
-<section class="footer">
+<div class="footer">
     <div class="container">
         <div class="row footer-wrap">
             <div class="col-md-4">
@@ -459,7 +465,7 @@
     <div class="bottom">
         Copyright@2015技能树www.jnshu.com&nbsp;ALL&nbsp;right&nbsp;reseved丨京ICP备13005880号
     </div>
-</section>
+</div>
 <!--页面底部介绍结束-->
 
 </body>
